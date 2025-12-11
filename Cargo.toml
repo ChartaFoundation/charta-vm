@@ -1,0 +1,15 @@
+[package]
+name = "charta-vm"
+version = "0.1.0"
+edition = "2021"
+description = "Charta Virtual Machine - runtime execution engine"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+charta-core = { path = "../charta-core" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+rstest = "0.18"
