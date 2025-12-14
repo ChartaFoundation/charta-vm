@@ -1,5 +1,7 @@
 # Charta VM
 
+![CI](https://github.com/ChartaFoundation/charta-mono/workflows/CI/badge.svg)
+
 Runtime execution engine for Charta programs.
 
 ## Components

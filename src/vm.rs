@@ -99,6 +99,50 @@ impl VM {
     pub fn get_all_coils(&self) -> HashMap<String, bool> {
         self.store.get_coils(&self.coil_names)
     }
+    
+    /// Get all signal states
+    pub fn get_all_signals(&self) -> HashMap<String, bool> {
+        self.store.get_signals(&self.signal_names)
+    }
+    
+    /// Get signal names
+    pub fn signal_names(&self) -> &[String] {
+        &self.signal_names
+    }
+    
+    /// Get coil names
+    pub fn coil_names(&self) -> &[String] {
+        &self.coil_names
+    }
+    
+    /// Get the loaded IR program
+    pub fn program(&self) -> &IR {
+        &self.program
+    }
+    
+    /// Set a signal value (for debugging/testing)
+    pub fn set_signal(&mut self, name: String, value: bool) {
+        if self.signal_names.contains(&name) {
+            self.store.set(name, value);
+        }
+    }
+    
+    /// Set a coil value (for debugging/testing)
+    pub fn set_coil(&mut self, name: String, value: bool) {
+        if self.coil_names.contains(&name) {
+            self.store.set(name, value);
+        }
+    }
+    
+    /// Get store reference (for debugging)
+    pub fn store(&self) -> &Store {
+        &self.store
+    }
+    
+    /// Get mutable store reference (for debugging)
+    pub fn store_mut(&mut self) -> &mut Store {
+        &mut self.store
+    }
 }
 
 impl Default for VM {

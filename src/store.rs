@@ -52,6 +52,16 @@ impl Store {
             .collect()
     }
 
+    /// Get all signal values
+    pub fn get_signals(&self, signal_names: &[String]) -> HashMap<String, bool> {
+        signal_names
+            .iter()
+            .filter_map(|name| {
+                self.values.get(name).map(|&value| (name.clone(), value))
+            })
+            .collect()
+    }
+
     /// Clone the store
     pub fn clone(&self) -> Self {
         Self {
@@ -112,5 +122,21 @@ mod tests {
 
         assert!(store.contains("signal1"));
         assert!(!store.contains("signal2"));
+    }
+
+    #[test]
+    fn test_store_get_signals() {
+        let mut store = Store::new();
+        store.set("signal1".to_string(), true);
+        store.set("signal2".to_string(), false);
+        store.set("coil1".to_string(), true);
+
+        let signal_names = vec!["signal1".to_string(), "signal2".to_string()];
+        let signals = store.get_signals(&signal_names);
+
+        assert_eq!(signals.get("signal1"), Some(&true));
+        assert_eq!(signals.get("signal2"), Some(&false));
+        assert_eq!(signals.get("coil1"), None); // Not a signal
+        assert_eq!(signals.len(), 2);
     }
 }

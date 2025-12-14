@@ -1,0 +1,12 @@
+/Users/dalerogers/Projects/active/experimental/charta/charta-vm/wasm/target/wasm32-unknown-unknown/release/deps/charta_core-02ae7cb9c6825554.d: /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/lib.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/mod.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/validation.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/schema.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/evidence.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/error.rs
+
+/Users/dalerogers/Projects/active/experimental/charta/charta-vm/wasm/target/wasm32-unknown-unknown/release/deps/libcharta_core-02ae7cb9c6825554.rlib: /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/lib.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/mod.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/validation.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/schema.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/evidence.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/error.rs
+
+/Users/dalerogers/Projects/active/experimental/charta/charta-vm/wasm/target/wasm32-unknown-unknown/release/deps/libcharta_core-02ae7cb9c6825554.rmeta: /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/lib.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/mod.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/validation.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/schema.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/evidence.rs /Users/dalerogers/Projects/active/experimental/charta/charta-core/src/error.rs
+
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/lib.rs:
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/mod.rs:
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/validation.rs:
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/schema.rs:
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/ir/evidence.rs:
+/Users/dalerogers/Projects/active/experimental/charta/charta-core/src/error.rs:
